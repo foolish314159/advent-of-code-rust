@@ -1,6 +1,7 @@
 mod aoc1;
 mod aoc2;
 mod aoc3;
+mod aoc4;
 
 fn main() {
     println!(
@@ -28,5 +29,14 @@ fn main() {
     println!(
         "AOC day 3 (part 2): {}",
         aoc3::sum_group_priorities("data/aoc3.txt")
+    );
+
+    println!(
+        "AOC day 4 (part 1): {}",
+        aoc4::sum_full_overlaps("data/aoc4.txt")
+    );
+    println!(
+        "AOC day 4 (part 2): {}",
+        aoc4::sum_partial_overlaps("data/aoc4.txt")
     );
 }
