@@ -3,6 +3,7 @@ mod aoc2;
 mod aoc3;
 mod aoc4;
 mod aoc5;
+mod aoc6;
 
 fn main() {
     println!(
@@ -48,5 +49,14 @@ fn main() {
     println!(
         "AOC day 5 (part 1): {}",
         aoc5::top_crates("data/aoc5.txt", true)
+    );
+
+    println!(
+        "AOC day 6 (part 1): {}",
+        aoc6::chars_before_marker::<4>("data/aoc6.txt")
+    );
+    println!(
+        "AOC day 6 (part 2): {}",
+        aoc6::chars_before_marker::<14>("data/aoc6.txt")
     );
 }
