@@ -5,6 +5,7 @@ mod aoc4;
 mod aoc5;
 mod aoc6;
 mod aoc7;
+mod aoc8;
 
 fn main() {
     println!(
@@ -68,5 +69,14 @@ fn main() {
     println!(
         "AOC day 7 (part 2): {}",
         aoc7::dir_to_delete("data/aoc7.txt", 70000000, 30000000)
+    );
+
+    println!(
+        "AOC day 8 (part 1): {}",
+        aoc8::visible_trees("data/aoc8.txt")
+    );
+    println!(
+        "AOC day 8 (part 2): {}",
+        aoc8::highest_scenic_score("data/aoc8.txt")
     );
 }
