@@ -4,6 +4,7 @@ mod aoc3;
 mod aoc4;
 mod aoc5;
 mod aoc6;
+mod aoc7;
 
 fn main() {
     println!(
@@ -58,5 +59,14 @@ fn main() {
     println!(
         "AOC day 6 (part 2): {}",
         aoc6::chars_before_marker::<14>("data/aoc6.txt")
+    );
+
+    println!(
+        "AOC day 7 (part 1): {}",
+        aoc7::size_of_dirs_below("data/aoc7.txt", 100000)
+    );
+    println!(
+        "AOC day 7 (part 2): {}",
+        aoc7::dir_to_delete("data/aoc7.txt", 70000000, 30000000)
     );
 }
